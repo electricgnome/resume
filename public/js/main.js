@@ -1,6 +1,6 @@
 
-let email_name = $("#user").attr("value");
-var v_user = email_name.split("@")[0];
+let email_name = $("#user").attr("value") || "null@kappainsure.com";
+var v_user = email_name.split("@")[0] ;
 if (v_user !== "") {
   localStorage.setItem("user", v_user);
 }
