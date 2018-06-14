@@ -54,7 +54,7 @@ nunjucks.configure("views", {
 //Todo APPl
 
 app.get("/", function(request, response) {
-  response.render("about.html");
+  response.render("index.html");
 });
 
 
