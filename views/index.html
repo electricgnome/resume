@@ -4,14 +4,14 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> {% block head %}
-    <title>{% block title %}{% endblock %} -Hector Saldana </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hector Saldana </title>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="shortcut icon" href="img/favicon.ico">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"> {% endblock %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 </head>
 
 <body>
@@ -20,17 +20,30 @@
     <main id="content">
 
 
-        <div class="row">
-          
-            <div class="col s3 sidepane" >
+        <div class="row main-row">
+            <div class="col s12  hide-on-med-and-up header">
+                <div>
+                    <br>
+                </div>
+                <div class="center-align">
+                    <img src="img/me.jpg" alt="Me" class="circle responsive-img" style="transform: scale(-1, 1);">
+                </div>
                 <h3 class="center-align"> Hector Saldana</h3>
                 <h5 class="center-align">Sofware Developer</h5>
+                <h6 class="center-align">in Houston Tx.</h6>
+                <h6 class="center-align" style="color:white">e-mail:<a href="mailto:hector@saldana.in?">hector@saldana.in</a></h6>
+            </div>
+            <div class="col m4 l3 hide-on-small-only sidepane ">
+                <h3 class="center-align"> Hector Saldana</h3>
+                <h5 class="center-align">Sofware Developer</h5>
+                <h6 class="center-align">in Houston Tx.</h6>
                 <div class="center-align">
-                <img src="img/me.jpg" alt="Me" class="circle responsive-img" style="transform: scale(-1, 1);"></div>
-                <div class="row banner valign-wrapper">
-                    <h5>e-mail: hector@saldana.in</h5>
+                    <img src="img/me.jpg" alt="Me" class="circle responsive-img" style="transform: scale(-1, 1);">
                 </div>
-                {# <div>
+                <div class="row banner valign-wrapper">
+                    <h5 >e-mail: <a href="mailto:hector@saldana.in?" style="color:white">hector@saldana.in</a></h5>
+                </div>
+                <!-- <div>
                     <p>
                         <b>Address</b>
                     </p>
@@ -54,16 +67,16 @@
                         <b>Date of Birth</b>
                     </p>
                     <p>07/24/1983</p>
-                </div> #}
-                <div class="row banner valign-wrapper">
+                </div> -->
+                <!-- <div class="row banner valign-wrapper">
                     <h5>Social Media</h5>
-                </div>
+                </div> -->
                 <div>
-                    <a href="https://github.com/electricgnome" />Github</a>
-                    <br>
-                    <a href="https://www.linkedin.com/in/hector-saldana-6b1b9314" />Linkedin</a>
+                    <a href="https://github.com/electricgnome" ><img src="img/github-logo.svg" alt="Github" style="height:25px"/></a>
+                    
+                    <a href="https://www.linkedin.com/in/hector-saldana-6b1b9314" ><img src="img/in.png" alt="Linkedin"style="height:25px" /></a>
 
-                </div> 
+                </div>
                 <div class="row banner valign-wrapper">
                     <h5>Skills</h5>
                 </div>
@@ -75,12 +88,30 @@
                     <li>HTML</li>
                     <li>CSS</li>
                 </ul>
+                <div class="row banner valign-wrapper">
+                    <h5>Education</h5>
+                </div>
+                <div>
+                    <ul><p style="font-weight: bold">DigitalCrafts</p> 2018/02 - 2018/08
+                        <li>Houston, Tx</li>
+                        <li style="font-weight: bold">Full-stack Software Development program</li>
+                        
+                        <li>Immersive course covering HTML, CSS, JavaScript, and Python, including an enphasis on cutting-edge frameworks like React/Redux and server-side technologies including Node.js, Express, and MySQL</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul><p style="font-weight: bold" >Texas A&M - Kingsville</p> 2005/01 - 2009/12
+                        <li>B.S. Electrical Engineering</li>
+                        <li>GPA: 3.45</li>
+                    </ul>
+                </div>
+                
             </div>
 
-            <div class="col s9">
+            <div class="col s12 m8 l8">
 
                 <p>I am an electrical engineer with a focus on software development. I have a wide range of experience from
-                    industrial automation to full stack web development. I have a passion for improving user experience.
+                    industrial automation to full stack web development. I have a passion for improving the user experience.
                 </p>
                 <div class="divider">
                 </div>
@@ -90,13 +121,13 @@
                 <div class="divider">
                 </div>
                 <div class="row">
-                    <div class="col s3">
+                    <div class="col s2">
                         2013/03-Present
                     </div>
-                    <div class="col s9">
+                    <div class="col s10">
                         <h5>Automation Engineer</h5>
                         <h6>Cameron a Schlumberger Co.</h6>
-                        <ul>
+                        <ul class="browser-default">
                             <li>Improved and implemented new automation controls for Gen 3 Artificial Lift Skid. Worked alongside
                                 multiple developers to quickly develop the automation logic between Danfoss Plus 1 Controller
                                 and Beijer HMI using CAN Bus. </li>
@@ -107,14 +138,14 @@
                             <li>Attended FATs, and SATs to ensure control panels met industry standards and performed to customer
                                 expectations.
                             </li>
-                            <li>Lead the planning, organizing, monitoring and reporting of multiple projects and/or multiple
+                            <li>Lead the planning, organizing, monitoring, and reporting of multiple projects and/or multiple
                                 phases of major projects.</li>
                             <li>Provide technical expertise and lead teams to execute work on projects in a safe, efficient and
                                 timely manner in accordance with contractual agreements.</li>
                             <li>Partner with all stakeholders during the RFQ process, including coordination of Purchase Orders,
                                 successful planning and execution of pre-award meetings, Kick-Off Meetings etc.</li>
                             <li>Establish clear communication with customers through daily updates and weekly status reports.</li>
-                            <li>Engage in SCADA startup and commissioning with extensive exposure to field work in South Texas
+                            <li>Engage in SCADA startup and commissioning with extensive exposure to fieldwork in South Texas
                                 and Colorado.
                             </li>
                             <li>Ensure all quality standards are met according to customer/contract, state and federal guidelines.</li>
@@ -124,14 +155,14 @@
                 </div>
 
                 <div class="row">
-                    <div class="col s3">
+                    <div class="col s2">
                         2011/05 - 2012/12
 
                     </div>
-                    <div class="col s9">
+                    <div class="col s10">
                         <h5>Engineering Project Manager</h5>
                         <h6>DFRobot</h6>
-                        <ul>
+                        <ul class="browser-default">
                             <li>Expanded product catalog from 100 products to over 500 products in 1.5 years.</li>
                             <li>Enhanced product designs such as The Romeo, which has become a best seller.</li>
                             <li>Led a team of Chinese design engineers on 3D printer development.</li>
@@ -142,14 +173,14 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col s3">
+                    <div class="col s2">
                         2010/01 - 2011/05
 
                     </div>
-                    <div class="col s9">
+                    <div class="col s10">
                         <h5>Chief Representative Officer</h5>
                         <h6>Industrias Radson S.A. de C.V.</h6>
-                        <ul>
+                        <ul class="browser-default">
                             <li>Established Shanghai office and presence in China.</li>
                             <li>Sourced products for 50% less and faster delivery time.</li>
                             <li>Improved relationships with Chinese suppliers and Company.</li>
@@ -158,14 +189,14 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col s3">
+                    <div class="col s2">
                         2009/06 - 2009/08
 
                     </div>
-                    <div class="col s9">
+                    <div class="col s10">
                         <h5>I&E Project Engineer</h5>
                         <h6>LyondellBassell</h6>
-                        <ul>
+                        <ul class="browser-default">
                             <li>Completed design project for Bently Nevada vibration monitoring equipment upgrade.</li>
                             <li>Designed project to install permanent pumps, creating annual savings of $30,000 USD.</li>
                             <li>Designed package to install nitrogen purge to various sight glasses throughout the plant to prevent
@@ -174,17 +205,17 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col s3">
+                    <div class="col s2">
                         2001/09 - 2004/10
 
                     </div>
-                    <div class="col s9">
+                    <div class="col s10">
                         <h5>Senior Airmen - Communications Technician</h5>
                         <h6>U.S. Air Force</h6>
                     </div>
                 </div>
 
-                <div class="divider">
+                <!--  <div class="divider">
                 </div>
                 <h4>
                     <b>Education</b>
@@ -192,38 +223,38 @@
                 <div class="divider">
                 </div>
                 <div class="row">
-                    <div class="col s3">
+                    <div class="col s1">
                         2005/01 - 2009/12
 
                     </div>
-                    <div class="col s9">
+                    <div class="col s11">
                         <h5>Texas A&M University - Kingsville</h5>
                         <h6>B.S. Electrical Engineering</h6>
                         <p>GPA: 3.45</p>
 
-                    </div>
-                </div>
-
-
-
+                    </div> -->
             </div>
+
+
+
+        </div>
         </div>
 
 
     </main>
-    <footer>
+    <!-- <footer> -->
 
 
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-        <!-- Compiled and minified JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-        <!-- Optional JavaScript -->
-        <script src="/socket-io/socket.io.js"></script>
-        <script src="js/main.js"></script>
-    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <!-- Optional JavaScript -->
+    <script src="js/main.js"></script>
+    <!-- <script src="public/js/main.js"></script> -->
+    <!-- </footer> -->
 
 
 
