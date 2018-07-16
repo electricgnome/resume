@@ -48,6 +48,7 @@ app.get("/", function(request, response) {
 //===========chat app----------------
 
 
-http.listen(8800, function() {
-  console.log("Listening on port 8800");
+var PORT = process.env.PORT || 8800;
+http.listen(PORT, function() {
+  console.log("Listening on port: " + PORT);
 });
