@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/electricgnome/resume/issues"
   },
-  "homepage": "https://github.com/electricgnome/resume#readme"
+  "homepage": "https://github.com/electricgnome/resume#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }
