@@ -105,3 +105,8 @@ main {
 .banner {
   background-color:#454c57;
 }
+
+#hor li{
+  display: inline;
+
+}
